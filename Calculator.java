@@ -1,26 +1,29 @@
 public class Calculator {
 
-	private int result;
-
-
-	public void add(int...params) {
-
-	for (Integer param : params) {
-	this.result += param;
-	}
-
-	}
-
-	public int getResult() {
-
-	return this.result;
-	
-	}
-
-	public void cleanResult() {
-
-	this.result = 0;
-
-	 }
+ private double result;
+ 
+ public void add(double x, double y) {
+	 this.result = x+y;
+ }
+ 
+ public void sub(double x, double y) {
+	 this.result = x-y;
+ }
+ 
+ public void mult(double x, double y) {
+	 this.result = x * y;
+ }
+ 
+ public void div(double x, double y) {
+	 this.result = x/y;
+ }
+ 
+ public double getResult(){
+	 return this.result;
+ }
+ 
+ public void cleanResult(){
+	 this.result = 0;
+ }
 
 }
